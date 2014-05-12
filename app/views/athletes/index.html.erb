@@ -1,0 +1,30 @@
+<table>
+    <thead>
+      <tr>
+        <th>Surname</th>
+        <th>First Name</th>
+        <th>Height(cm)</th>
+        <th>Weight(kg)</th>
+        <th>Country/Team</th>
+        <th>Country</th>
+        <th>Country Code</th>
+        <th>Gender</th>
+        <th>Sport/Discipline</th>
+      </tr>
+   </thead>
+
+    <tbody>
+     <% @athletes.each do |athlete| %>
+        <tr>
+          <td><%=athlete.sname%></td>
+          <td><%=athlete.fname%></td>
+          <td><%=athlete.height%></td>
+          <td><%=athlete.weight%></td>
+          <td><%=athlete.country%></td>
+          <td><%=athlete.code%></td>
+          <td><%=athlete.gender%></td>
+          <td><%=athlete.sport%></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
